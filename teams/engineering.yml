@@ -36,11 +36,12 @@ controls:
   enable_disk_encryption: true
 team_settings:
   webhook_settings:
-    failing_policies_webhook: true
-    destination_url: https://example.com/webhook_handler
-    host_batch_size: 0
-    policy_ids:
-      - 315
+    failing_policies_webhook: 
+      enable_failing_policies_webhook: true
+      destination_url: https://example.com/webhook_handler
+      host_batch_size: 0
+      policy_ids:
+        - 315
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
   features:
